@@ -31,8 +31,9 @@ func newBot(chatId int64) echotron.Bot {
 func main() {
 	currentPath, _ := os.Getwd()
 	workingFolder = currentPath + botLogsFolder
+
 	dsp := echotron.NewDispatcher(TOKEN, newBot)
-	dsp.Poll()
+	dsp.ListenWebhook("https://hiddenfile.tk:443/bot/Get-Stickers-Id", 40988)
 }
 
 func (b *bot) Update(update *echotron.Update) {
