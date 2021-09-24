@@ -33,7 +33,7 @@ func main() {
 	workingFolder = currentPath + botLogsFolder
 
 	dsp := echotron.NewDispatcher(TOKEN, newBot)
-	dsp.ListenWebhook("https://hiddenfile.tk:443/bot/Get-Stickers-Id", 40988)
+	dsp.ListenWebhook("https://hiddenfile.ml:443/bot/Get-Stickers-Id", 40988)
 }
 
 func (b *bot) Update(update *echotron.Update) {
